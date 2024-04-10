@@ -387,10 +387,10 @@ public class Main {
 
         do{
             System.out.print("Ingrese una palabra o vacio para salir: ");
-            palabra = lectura.next();
+            palabra = lectura.nextLine();
 
             cadena += palabra;
-        }while(!palabra.equals(" "));
+        }while(!palabra.isEmpty());
         System.out.println(cadena);
     }
     private static int[] pedirDosNumeros(){
